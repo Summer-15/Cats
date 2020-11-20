@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Cat gallery</title>
+    <style>
+        body
+        {
+            display: flex;
+            justify-content: center;
+        }
+        #gallery
+        {
+            display:flex;
+            flex-direction: column;
+            border: 2px solid black;
+            justify-content: center;
+            align-items: center;
+        }
+        nav
+        {
+            display: flex;
+            flex-direction: row;
+        }
+        iframe
+        {
+            display:flex;
+            align-content: center;
+        }
+        .line
+        {
+            border: 1px solid black;
+            width:100%;
+        }
+        a
+        {
+            border: 1px solid black;
+        }
+
+    </style>
+</head>
+<body>
+    <div id = "gallery">
+        <h1>Cats Gallery</h1>
+        <div class = "line"></div>
+        <br>
+        <iframe frameborder="0" scrolling="no" width="256px" height="256px"
+                src="./icons/cat_tied_256.png" name="imgbox" id="imgbox">
+            <p>iframes are not supported by your browser.</p>
+        </iframe><br />
+
+        <div class = "line"></div>
+        <nav>
+            <a href="./icons/cat_tied_256.png" target="imgbox"><img src="./icons/cat_tied_64.png" alt="" width="64px"></a>
+            <a href="./icons/cat_eyes_256.png" target="imgbox"><img src="./icons/cat_eyes_64.png" alt="" width="64px"></a>
+            <a href="./icons/cat_purr_256.png" target="imgbox"><img src="./icons/cat_purr_64.png" alt="" width="64px"></a>
+            <a href="./icons/cat_cage_256.png" target="imgbox"><img src="./icons/cat_cage_64.png" alt="" width="64px"></a>
+            <a href="./icons/cat_clean_256.png" target="imgbox"><img src="./icons/cat_clean_64.png" alt="" width="64px"></a>
+            <a href="./icons/cat_box_256.png" target="imgbox"><img src="./icons/cat_box_64.png" alt="" width="64px"></a>
+        </nav>
+    </div>
+</body>
+</html>
